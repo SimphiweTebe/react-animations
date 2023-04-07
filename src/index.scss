@@ -1,0 +1,27 @@
+@forward './styles/index.scss';
+@use './styles/variables.scss' as *;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 63.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: $colorDark;
+    color: $colorPrimary;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
